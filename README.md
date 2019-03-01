@@ -5,9 +5,11 @@ Twitter follow automation by selenium-php.
 # Usage
 
 ```sh
-# You need edit script.
-$ sh shell/getTwitterAccountFromQiita.sh
+# no headless
 $ php batch/run.php
+
+# headless
+$ php batch/run.php 1
 ```
 
 # Setting 
