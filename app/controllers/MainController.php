@@ -6,6 +6,8 @@ class MainController {
 
     private $is_headless;
 
+    const PATH_TWITTER_URLS_FILE = './log/example.txt';
+
     function __construct($is_headless) {
         $this->is_headless = $is_headless;
     }
@@ -13,7 +15,7 @@ class MainController {
     public function main() {
         // ブラウザ起動
         $driver = Models_Webdriver::create($this->is_headless);
-        $urls = file('./log/qiita_shell_twitter_2.txt');
+        $urls = file(self::PATH_TWITTER_URLS_FILE);
         $twitter = new Models_Browser_Twitter($driver);
         $twitter->login();
         foreach ($urls as $url) {
