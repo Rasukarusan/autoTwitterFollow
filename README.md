@@ -36,8 +36,8 @@ https://twitter.com/ZZZZZZZ
 ....
 ```
 
-You can use prepared shell script to coect twitter urls.
-This script correct urls from qiita.
+You can use prepared shell script to collect twitter urls.
+This script collect urls from qiita.
 ```sh 
 $ cd twitter-auto-follow/batch
 $ sh getTwitterAccountFromQiita.sh
